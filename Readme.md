@@ -1,6 +1,6 @@
 # Личный проект «Девайс»
 
-* Студент: [Борис Глинский](https://htmlacademy.ru/profile/colspan).
+* Студент: [Борис Глинский](https://up.htmlacademy.ru/htmlcss/27/user/1198395).
 * Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
