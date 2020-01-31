@@ -11,6 +11,14 @@
           <img src="img/device-logo.svg" width="163" height="35" alt="Логотип Device">
         </a>
       </div>
+      
+      <p>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <label for="search-id" class="visually-hidden">Поиск по сайту</label>
+          <input type="search" name="search" id="search-id" placeholder="Поиск по сайту">
+        </form>
+      </p>
+
       <p>
         <a href="sign-in.html">Войти</a>
       </p>
@@ -28,6 +36,26 @@
         <ul>
           <li>
             <a href="catalog.html">Каталог товаров</a>
+            <ul>
+              <li>
+                <a href="VR.html">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="monopods.html">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="action-cameras.html">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="fitness-bracelets.html">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="smart-watches">Умные часы</a>
+              </li>
+              <li>
+                <a href="quadcopters.html">Квадрокоптеры</a>
+              </li>
+            </ul>   
           </li>
           <li>
             <a href="delivery.html">Доставка</a>
@@ -43,15 +71,15 @@
     </header>
     <main>
 
-      <h1>Магазин электроники "Device"</h1>
+      <h1 class="visually-hidden">Магазин электроники "Device"</h1>
 
       <section>
-        <h2>Популярные товары</h2>
+        <h2 class="visually-hidden">Популярные товары</h2>
         
         <ul>
           <li>
             <p>
-              <img src="img/selfie-stick.png" width="384" height="486" alt="Самая длинная селфи-палка">
+              <img src="img/selfie-stick.png" width="384" height="486" alt="Складная селфи-палка синего цвета">
             </p>
 
             <p>Делай селфи, как Бен Стиллер!</p>
@@ -77,7 +105,7 @@
           </li>
           <li>
             <p>
-              <img src="img/fitness-bracelet.png" width="345" height="485" alt="Фитнес-браслет">
+              <img src="img/fitness-bracelet.png" width="345" height="485" alt="Фитнес-браслет черного цвета">
             </p>
 
             <p>Худеем правильно!</p>
@@ -99,7 +127,7 @@
           </li>
           <li>
             <p>
-              <img src="img/quadcopter.png" width="526" height="334" alt="Квадрокоптер">
+              <img src="img/quadcopter.png" width="526" height="334" alt="Квадрокоптер белого цвета с лазерной пушкой">
             </p>
 
             <p>Порхает как бабочка,
@@ -126,7 +154,7 @@
       </section>
 
       <section>
-        <h2>Разделы товаров</h2>
+        <h2 class="visually-hidden">Разделы товаров</h2>
         <ul>
           <li>
             <a href="VR.html">Виртуальная реальность</a>
@@ -150,7 +178,7 @@
       </section>
 
       <section>
-        <h2>Предоставляемые услуги</h2>
+        <h2 class="visually-hidden">Предоставляемые услуги</h2>
         
         <ul>
           <li>
@@ -184,7 +212,7 @@
       </section>
 
       <section>
-        <h2>Знаменитые бренды</h2>
+        <h2 class="visually-hidden">Знаменитые бренды</h2>
         <ul>
           <li>
             <a href="https://dji.com">
@@ -226,16 +254,44 @@
 
       <section>
         <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
-           работоспособность покупки. Всякое бывает.</p>
-        <a href="full-map.html">
-          <img src="img/map.jpg" width="560" height="222" alt="Карта расположения магазина">
-        </a>
+        <p>
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
+          работоспособность покупки. Всякое бывает.
+        </p>
+        <p>   
+          <a href="full-map.html">
+            <img src="img/map.jpg" width="560" height="222" alt="Адрес магазина: Москва, улица Строителей, 15">
+          </a>
+        </p>
         <p>
           <a href="write-us.html">Напишите нам</a>
         </p>
       </section>
 
+      <section>
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <button type="button">Закрыть</button>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="name-id">Ваше имя:</label>
+            <input type="text" name="name" id="name-id" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="email-id">Ваш e-mail:</label>
+            <input type="email" name="email" id="email-id" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="message-id">Текст письма</label>
+            <textarea name="message" id="message-id" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
+        <button type="button">Закрыть</button>
+      </section>
     </main>
     <footer>
 
@@ -260,9 +316,6 @@
       <nav>
         <ul>
           <li>
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li>
             <a href="delivery.html">Доставка</a>
           </li>
           <li>
@@ -273,7 +326,7 @@
             </li>
           </ul>
       </nav>
-      <p>г. Москва, ул. Строителей, 15</p>
+      <address>г. Москва, ул. Строителей, 15</address>
       <p>
         <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </p>
@@ -292,7 +345,7 @@
       </ul>
       <div>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/htmlacademy-logo.svg" alt="Логотип академии">
+          <img src="img/htmlacademy-logo.svg" alt="Логотип 'htmlacademy'">
         </a>
       </div>
     </footer>

@@ -12,6 +12,13 @@
         </a>
       </div>
       <p>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <label for="search-id" class="visually-hidden">Поиск по сайту</label>
+          <input type="search" name="search" id="search-id" placeholder="Поиск по сайту">
+        </form>
+      </p>
+
+      <p>
         <a href="sign-in.html">Войти</a>
       </p>
 
@@ -22,10 +29,32 @@
       <p>
         <a href="cart.html">Корзина</a>
       </p>
+
+      
       <nav>
         <ul>
           <li>
             <a href="catalog.html">Каталог товаров</a>
+            <ul>
+              <li>
+                <a href="VR.html">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="monopods.html">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="action-cameras.html">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="fitness-bracelets.html">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="smart-watches">Умные часы</a>
+              </li>
+              <li>
+                <a href="quadcopters.html">Квадрокоптеры</a>
+              </li>
+            </ul>   
           </li>
           <li>
             <a href="delivery.html">Доставка</a>
@@ -58,35 +87,61 @@
         <header>
           <h2>Фильтр:</h2>
         </header>
+        <form action="https://echo.htmlacademy.ru" method="post">
 
-        <h3>Стоимость</h3>
-        <p>
-          от 0 до 5000
-        </p>
+          <h3>Стоимость</h3>
+          <p>
+            от 0 до 5000
+          </p>
+          
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="black" id="black-id">
+                <label for="black-id">Черный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="white" id="white-id">
+                <label for="white-id">Белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="blue" id="blue-id">
+                <label for="blue-id">Синий</label>
+              </li>
+              <li>
+                <input type="checkbox" name="red" id="red-id">
+                <label for="red-id">Красный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="pink" id="pink-id">
+                <label for="pink-id">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <h3>Цвет</h3>
-        <ul>
-          <li>Черный</li>
-          <li>Белый</li>
-          <li>Синий</li>
-          <li>Красный</li>
-          <li>Розовый</li>
-        </ul>
-
-        <h3>Bluetooth</h3>
-        <ul>
-          <li>Есть</li>
-          <li>Нет</li>
-        </ul>
-
-        <button type="button">Показать</button>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                <input type="radio" name="bluetooth" value="with-bluetooth" id="with-bluetooth-id">
+                <label for="with-bluetooth-id">Есть</label>
+              </li>
+              <li>
+                <input type="radio" name="bluetooth" value="no-bluetooth" id="no-bluetooth-id">
+                <label for="no-bluetooth-id">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       
       <section>
         <header>
 
-          <h2>Каталог товаров</h2>
+          <h2 class="visually-hidden">Каталог товаров</h2>
           
           <p>Сортировка:</p>
           <ul>
@@ -107,7 +162,7 @@
               <a href="catalog-item-1.html">Любительская селфи-палка</a>
             </h3>
             <p>
-              <img src="img/catalog-item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              <img src="img/catalog-item-1.jpg" width="360" height="380" alt="Раздвигающаяся селфи-палка черного цвета">
             </p>
             <p>500 руб.</p>
           </li>
@@ -116,7 +171,7 @@
               <a href="catalog-item-2.html">Профессиональная селфи-палка</a>
             </h3>
             <p>
-              <img src="img/catalog-item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+              <img src="img/catalog-item-2.jpg" width="360" height="380" alt="Складывающася селфи-палка черного цвета">
             </p>
             <p>1 500 руб.</p>
           </li>
@@ -125,7 +180,7 @@
               <a href="catalog-item-3.html">Непотопляемая селфи-палка</a>
             </h3>
             <p>
-              <img src="img/catalog-item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              <img src="img/catalog-item-3.jpg" width="360" height="380" alt="Селфи-палка для 'gopro' камеры жёлтого цвета (не раздвигается)">
             </p>
             <p>2 500 руб.</p>
           </li>
@@ -134,7 +189,7 @@
               <a href="catalog-item-4.html">Селфи-палка "Следуй за мной"</a>
             </h3>
             <p>
-              <img src="img/catalog-item-4.jpg" width="360" height="380" alt="Селфи-палка 'Следуй за мной'">
+              <img src="img/catalog-item-4.jpg" width="360" height="380" alt="Селфи-палка, выполненная в виде человеческой руки">
             </p>
             <p>4 900 руб.</p>
           </li>
@@ -162,7 +217,6 @@
       </section>
     </main>
     <footer>
-
       <div>
         <a href="index.html">
           <img src="img/device-logo.svg" width="163" height="35" alt="Логотип Device">
@@ -184,9 +238,6 @@
       <nav>
         <ul>
           <li>
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li>
             <a href="delivery.html">Доставка</a>
           </li>
           <li>
@@ -197,7 +248,7 @@
             </li>
           </ul>
       </nav>
-      <p>г. Москва, ул. Строителей, 15</p>
+      <address>г. Москва, ул. Строителей, 15</address>
       <p>
         <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </p>
@@ -205,18 +256,18 @@
 
       <ul>
         <li>
-          <a href="facebook.com">Фейсбук</a>
+          <a href="https://facebook.com">Фейсбук</a>
         </li>
         <li>
-          <a href="instagram.com">Инстаграм</a>
+          <a href="https://instagram.com">Инстаграм</a>
         </li>
         <li>
-          <a href="twitter.com">Твиттер</a>
+          <a href="https://twitter.com">Твиттер</a>
         </li>
       </ul>
       <div>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/htmlacademy-logo.svg" alt="Логотип академии">
+          <img src="img/htmlacademy-logo.svg" alt="Логотип 'htmlacademy'">
         </a>
       </div>
     </footer>
