@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Gilroy";
+    font-family: "Gilroy Bold";
     src: 
         url("../fonts/gilroyextrabold.woff2") format("woff2"),
         url("../fonts/gilroyextrabold.woff") format("woff");
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: "Gilroy";
+    font-family: "Gilroy Regular";
     src: 
         url("../fonts/gilroylight.woff2") format("woff2"),
         url("../fonts/gilroylight.woff") format("woff");
@@ -24,8 +24,8 @@ body {
 
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
-    line-height: 30px;
     font-weight: 300;
+    line-height: 30px;
     color: #464646;
 }
 
@@ -36,6 +36,7 @@ a {
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
+    font-size: 1px;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -43,9 +44,8 @@ a {
 }
 
 .button {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy Bold", sans-serif;
     font-size: 18px;
-    font-weight: 800;
     letter-spacing: 3.6px;
     color: #000000;
 
@@ -97,24 +97,21 @@ a {
 }
 
 .main-navigation-item > a {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy Bold", sans-serif;
     font-size: 18px;
-    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 3.6px;
 }
 
 .section-title {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy Bold", sans-serif;
     font-size: 47px;
-    font-weight: 800;
     color: #000000;
 }
 
 .info ul {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy Bold", sans-serif;
     font-size: 16px;
-    font-weight: 800;
     line-height: 40px;
     color: #000000;
 
@@ -178,7 +175,7 @@ a {
 }
 
 .catalog-header h1 {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy Bold", sans-serif;
     font-size: 47px;
     color: #000000;
 }
@@ -207,9 +204,8 @@ a {
 }
 
 .catalog-filter legend {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy Bold", sans-serif;
     font-size: 18px;
-    font-weight: 800;
 }
 
 .filter label {
@@ -221,15 +217,13 @@ a {
 }
 
 .product-name a {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy Bold", sans-serif;
     font-size: 18px;
-    font-weight: 800;
     color: #000000;
 }
 
 .products-list-item p {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy Regular", sans-serif;
     font-size: 16px;
-    font-weight: normal;
     color: #000000;
 }
