@@ -1,0 +1,235 @@
+@font-face {
+    font-family: "Gilroy";
+    src: 
+        url("../fonts/gilroyextrabold.woff2") format("woff2"),
+        url("../fonts/gilroyextrabold.woff") format("woff");
+
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: 
+        url("../fonts/gilroylight.woff2") format("woff2"),
+        url("../fonts/gilroylight.woff") format("woff");
+
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #464646;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.button {
+    font-family: "Gilroy", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 3.6px;
+    color: #000000;
+
+    background-color: #f0c52e;
+}
+
+.main-header {
+    color: #000000;
+    background-color: rgba(240,197,46, 0.5);
+}
+
+.main-header-logo a:hover {
+    opacity: 0.6;
+}
+
+.main-header-logo a:active {
+    opacity: 0.3;
+}
+
+.main-header a {
+    color: inherit;
+    letter-spacing: 0.15px;
+}
+
+.main-header a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field {
+    background-color: transparent;
+    border: none;
+    opacity: 0.3;
+}
+
+.search-field:hover {
+    opacity: 0.6;
+}
+
+.search-field:focus {
+    opacity: 1;
+}
+
+.main-header ul {
+    list-style: none;
+}
+
+.main-navigation-item > a {
+    font-family: "Gilroy", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+}
+
+.section-title {
+    font-family: "Gilroy", sans-serif;
+    font-size: 47px;
+    font-weight: 800;
+    color: #000000;
+}
+
+.info ul {
+    font-family: "Gilroy", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 40px;
+    color: #000000;
+
+    list-style: none;
+}
+
+.main-footer {
+    background-color: #464646;
+}
+
+.main-footer-logo a:hover,
+.htmlacademy-logo a:hover {
+    opacity: 0.6;
+}
+
+.main-footer-logo a:active,
+.htmlacademy-logo a:active {
+    opacity: 0.3;
+}
+
+.main-footer a {
+    color: #ffffff;
+}
+
+.user-options a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.location {
+    color: #ffffff;
+    font-style: normal;
+}
+
+.main-footer a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.user-options a:hover {
+    color: #ffffff;
+}
+
+.main-footer a:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.socials-list a {
+    opacity: 0.3;
+}
+
+.socials-list a:hover {
+    opacity: 0.6;
+}
+
+.socials-list a:active {
+    opacity: 0.1;
+}
+
+.catalog ul {
+    list-style: none;
+}
+
+.catalog-header h1 {
+    font-family: "Gilroy", sans-serif;
+    font-size: 47px;
+    color: #000000;
+}
+
+.catalog-breadcrumbs {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-breadcrumbs a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-breadcrumbs a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-breadcrumbs a:active {
+    color: rgba(0, 0, 0, 0.1)
+}
+
+.catalog-filter {
+    color: #000000;
+    
+    background-color: #ebebeb;
+}
+
+.catalog-filter legend {
+    font-family: "Gilroy", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.filter label {
+    font-size: 14px;
+}
+
+.filter input[disabled] + label {
+    color: #a6a6a6;
+}
+
+.product-name a {
+    font-family: "Gilroy", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #000000;
+}
+
+.products-list-item p {
+    font-family: "Gilroy", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #000000;
+}

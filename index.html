@@ -3,38 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <div>
+    <header class="main-header">
+      <div class="main-header-logo">
         <a>
           <img src="img/device-logo.svg" width="163" height="35" alt="Логотип Device">
         </a>
       </div>
       
-      <form action="https://echo.htmlacademy.ru" method="get">
-          <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+      <form class="site-search" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту">
       </form>
       
-      <p>
+      <p class="header-sign-in">
         <a href="sign-in.html">Войти</a>
       </p>
 
-      <p>
+      <p class="header-compare">
         <a href="compare.html">Сравнить</a>
       </p>
         
-      <p>
+      <p class="header-cart">
         <a href="cart.html">Корзина</a>
       </p>
 
       
       <nav>
-        <ul>
-          <li>
+        <ul class="main-navigation">
+          <li class="main-navigation-item">
             <a href="catalog.html">Каталог товаров</a>
-            <ul>
+            <ul class="catalog-navigation">
               <li>
                 <a href="VR.html">Виртуальная реальность</a>
               </li>
@@ -55,13 +58,13 @@
               </li>
             </ul>   
           </li>
-          <li>
+          <li class="main-navigation-item">
             <a href="delivery.html">Доставка</a>
           </li>
-          <li>
+          <li class="main-navigation-item">
             <a href="warranty.html">Гарантия</a>
           </li>
-          <li>
+          <li class="main-navigation-item">
             <a href="contact.html">Контакты</a>
           </li>
         </ul>
@@ -235,8 +238,8 @@
         </ul>
       </section>
 
-      <section>
-        <h2>О нас</h2>
+      <section class="info">
+        <h2 class="section-title">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России!
            DEVICE работает со многими транспортными компаниями:</p>
@@ -246,12 +249,12 @@
           <li>ЖелДорЭкспедиция</li>
         </ul>
         <p>
-          <a href="about-us.html">Подробнее о нас</a>
+          <a class="button" href="about-us.html">Подробнее о нас</a>
         </p>
       </section>
 
-      <section>
-        <h2>Контакты</h2>
+      <section class="contacts">
+        <h2 class="section-title">Контакты</h2>
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.
@@ -262,7 +265,7 @@
           </a>
         </p>
         <p>
-          <a href="write-us.html">Напишите нам</a>
+          <a class="button" href="write-us.html">Напишите нам</a>
         </p>
       </section>
 
@@ -291,38 +294,41 @@
         <button type="button">Закрыть</button>
       </section>
     </main>
-    <footer>
-
-      <div>
+    <footer class="main-footer">
+      
+      <div class="main-footer-logo">
         <a href="index.html">
-          <img src="img/device-logo.svg" width="163" height="35" alt="Логотип Device">
+          <img src="img/device-footer-logo.svg" width="163" height="35" alt="Логотип Device">
         </a>
       </div>
-      <p>
-        <a href="sign-in.html">Войти</a>
-      </p>
-  
-      <p>
-        <a href="compare.html">Сравнить</a>
-      </p>
-          
-      <p>
-        <a href="cart.html">Корзина</a>
-      </p>
+
+      <div class="user-options">
+        <p class="footer-sign-in">
+          <a href="sign-in.html">Войти</a>
+        </p>
+    
+        <p class="footer-compare">
+          <a href="compare.html">Сравнить</a>
+        </p>
+            
+        <p class="footer-cart">
+          <a href="cart.html">Корзина</a>
+        </p>
+      </div>
 
 
       <nav>
-        <ul>
-          <li>
+        <ul class="main-navigation">
+          <li class="main-navigation-item">
             <a href="delivery.html">Доставка</a>
           </li>
-          <li>
+          <li class="main-navigation-item">
             <a href="warranty.html">Гарантия</a>
           </li>
-          <li>
+          <li class="main-navigation-item">
             <a href="contact.html">Контакты</a>
-            </li>
-          </ul>
+          </li>
+        </ul>
       </nav>
       <address>г. Москва, ул. Строителей, 15</address>
       <p>
@@ -330,18 +336,18 @@
       </p>
 
 
-      <ul>
-        <li>
+      <ul class="socials-list">
+        <li class="social-fb">
           <a href="https://facebook.com">Фейсбук</a>
         </li>
-        <li>
+        <li class="social-inst">
           <a href="https://instagram.com">Инстаграм</a>
         </li>
-        <li>
+        <li class="social-tw">
           <a href="https://twitter.com">Твиттер</a>
         </li>
       </ul>
-      <div>
+      <div class="htmlacademy-logo">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/htmlacademy-logo.svg" alt="Логотип 'htmlacademy'">
         </a>
