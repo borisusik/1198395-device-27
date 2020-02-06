@@ -103,10 +103,65 @@ a {
     letter-spacing: 3.6px;
 }
 
+.popular-list {
+    list-style: none;
+}
+
+.popular-slogan {
+    line-height: 56px;
+}
+
+.popular-slogan,
 .section-title {
     font-family: "Gilroy Bold", sans-serif;
     font-size: 47px;
     color: #000000;
+}
+
+.popular-features thead {
+    font-size: 13px;
+}
+
+.popular-features tbody {
+    font-family: "Gilroy Regular", sans-serif;
+    font-size: 36px;
+}
+
+.product-navigation-list {
+    list-style: none;
+}
+
+.product-navigation-item a {
+    font-family: "Gilroy Bold";
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.product-navigation-item a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-features {
+    background-color: #e5e5e5;
+}
+
+.site-features-list {
+    list-style: none;
+}
+
+.famous-brands ul {
+    list-style: none;
+}
+
+.famous-brands a {
+    filter: grayscale(100%);
+    opacity: 0.2;
+}
+
+.famous-brands a:hover {
+    filter: none;
+    opacity: 1;
 }
 
 .info ul {
@@ -116,6 +171,30 @@ a {
     color: #000000;
 
     list-style: none;
+}
+
+.contact-modal label {
+    font-family: "Gilroy Bold";
+    font-size: 18px;
+    color: #000000;
+}
+
+.modal-field {
+    font-size: 14px;
+
+    background-color: #f2f2f2;
+}
+
+.modal-field:hover {
+    background-color: #eaeaea;
+}
+
+.modal-field:focus {
+    background-color: transparent;
+}
+
+.modal-field:invalid {
+    background-color: #f6dada;
 }
 
 .main-footer {
@@ -180,12 +259,9 @@ a {
     color: #000000;
 }
 
-.catalog-breadcrumbs {
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.3);
-}
-
+.catalog-breadcrumbs,
 .catalog-breadcrumbs a {
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -203,9 +279,31 @@ a {
     background-color: #ebebeb;
 }
 
+.filter-header {
+    background-color: #d9d9d9;
+}
+
+.catalog-caption,
+.pagination-button a {
+    font-family: "Gilroy Bold";
+    font-size: 16px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
 .catalog-filter legend {
     font-family: "Gilroy Bold", sans-serif;
     font-size: 18px;
+}
+
+.cost-filter label,
+.cost-filter input {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.cost-filter input {
+    background-color: transparent;
 }
 
 .filter label {
@@ -214,6 +312,26 @@ a {
 
 .filter input[disabled] + label {
     color: #a6a6a6;
+}
+
+.catalog-products-header,
+.catalog-products-footer {
+    background-color: #ebebeb;
+}
+
+.catalog-sorting a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-sorting a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-sorting a:active,
+.current-sorting a {
+    color: #000000;
 }
 
 .product-name a {
@@ -226,4 +344,27 @@ a {
     font-family: "Gilroy Regular", sans-serif;
     font-size: 16px;
     color: #000000;
+}
+
+.catalog-pagination a {
+    font-family: "Gilroy Bold";
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-pagination a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-pagination a:active,
+.current-page a {
+    color: #000000;
+}
+
+.pagination-button a:hover {
+    background-color: #d9d9d9;
+}
+
+.pagination-button a:active {
+    color: rgba(0, 0, 0, 0.3);
 }
