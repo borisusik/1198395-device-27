@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Каталог Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -87,20 +87,20 @@
 
 
       <section class="catalog-filter">
-        <header>
-          <h2>Фильтр:</h2>
+        <header class="filter-header">
+          <h2 class="catalog-caption">Фильтр:</h2>
         </header>
         <form action="https://echo.htmlacademy.ru" method="post">
 
           
-          <fieldset>
+          <fieldset class="filter cost-filter">
             <legend>Стоимость</legend>
             <label>
-              Минимальная стоимость
+              от
               <input type="number" name="min-cost" min="0" max="5000">
             </label>
             <label>
-              Максимальная стоимость
+              до
               <input type="number" name="max-cost" min="0" max="5000">
             </label>
           </fieldset>
@@ -154,15 +154,15 @@
 
           <h2 class="visually-hidden">Каталог товаров</h2>
           
-          <p>Сортировка:</p>
-          <ul>
-            <li>
+          <p class="catalog-caption">Сортировка:</p>
+          <ul class="catalog-sorting">
+            <li class="sort-by-price current-sorting">
               <a href="sort-by-price.html">По цене</a>
             </li>
-            <li>
+            <li class="sort-by-type">
               <a href="sort-by-type.html">По типу</a>
             </li>
-            <li>
+            <li class="sort-by-popularity">
               <a href="sort-by-popularity.html">По популярности</a>
             </li>
           </ul>
@@ -206,12 +206,12 @@
           </li>
         </ul>
 
-        <footer>
-          <div>
+        <footer class="catalog-products-footer">
+          <div class="pagination-button">
             <a href="#prev">Назад</a>
-          </div>
-          <ul>
-            <li>
+          </div class="pagination-prev">
+          <ul class="catalog-pagination">
+            <li class="current-page">
               <a href="catalog-1.html">1</a>
             </li>
             <li>
@@ -221,7 +221,7 @@
               <a href="catalog-3.html">3</a>
             </li>
           </ul>
-          <div>              
+          <div class="pagination-button">              
             <a href="#next">Вперед</a>
           </div>
         </footer>
