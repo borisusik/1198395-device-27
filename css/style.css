@@ -26,6 +26,7 @@ body {
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
+    letter-spacing: 0.15px;
     color: #464646;
 }
 
@@ -46,54 +47,93 @@ a {
 .button {
     font-family: "Gilroy Bold", sans-serif;
     font-size: 18px;
+    text-transform: uppercase;
     letter-spacing: 3.6px;
     color: #000000;
 
-    background-color: #f0c52e;
+    background: #f0c52e;
 }
 
 .main-header {
+    padding-top: 21px;
+    padding-bottom: 56px;
+
     color: #000000;
-    background-color: rgba(240,197,46, 0.5);
+    background: linear-gradient(to bottom, #ffffff 40px, rgba(240,197,46, 0.5) 40px);
 }
 
-.main-header-logo a:hover {
-    opacity: 0.6;
+.wrapper {
+    width: 1160px;
+    margin: 0 auto;
 }
 
-.main-header-logo a:active {
-    opacity: 0.3;
+.header-wrapper {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+.half-wrapper,
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.half-wrapper {
+    width: 500px;
 }
 
 .main-header a {
-    color: inherit;
     letter-spacing: 0.15px;
+    color: inherit;
 }
 
-.main-header a:hover {
-    color: rgba(0, 0, 0, 0.6);
+.main-header p,
+.main-footer p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.main-header a:active {
-    color: rgba(0, 0, 0, 0.3);
+.main-header ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.main-header-logo {
+    width: 163px;
+    height: 35px;
+    margin-bottom: 27px;
+}
+
+.header-options {
+    margin-bottom: 36px;
+}
+
+.site-search {
+    padding-left: 38px;
 }
 
 .search-field {
+    padding: 0;
+
     background-color: transparent;
     border: none;
     opacity: 0.3;
 }
 
-.search-field:hover {
-    opacity: 0.6;
+.header-sign-in {
+    padding-left: 26px;
 }
 
-.search-field:focus {
-    opacity: 1;
+.header-compare {
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: 38px;
 }
 
-.main-header ul {
-    list-style: none;
+.header-cart {
+    padding-left: 25px;
 }
 
 .main-navigation-item > a {
@@ -103,28 +143,58 @@ a {
     letter-spacing: 3.6px;
 }
 
+.main-navigation-item {
+    margin-right: -3.6px;
+}
+
+ul.half-wrapper li:nth-child(2) {
+    margin-right: auto;
+    margin-left: 38px;
+}
+
+.catalog-navigation {
+    display: none;
+}
+
+.main-header a:hover,
+.search-field:hover {
+    opacity: 0.6;
+}
+
+.main-header a:active {
+    opacity: 0.3;
+}
+
+.search-field:focus {
+    opacity: 1;
+}
+
 .popular-list {
     list-style: none;
 }
 
 .popular-slogan {
     line-height: 56px;
+    letter-spacing: 0.47px;
 }
 
 .popular-slogan,
 .section-title {
     font-family: "Gilroy Bold", sans-serif;
     font-size: 47px;
+    letter-spacing: 0.47px;
     color: #000000;
 }
 
 .popular-features thead {
     font-size: 13px;
+    letter-spacing: 0.13px;
 }
 
 .popular-features tbody {
     font-family: "Gilroy Regular", sans-serif;
     font-size: 36px;
+    letter-spacing: 0.36px;
 }
 
 .product-navigation-list {
@@ -164,6 +234,10 @@ a {
     opacity: 1;
 }
 
+.info p {
+    width: 485px;
+}
+
 .info ul {
     font-family: "Gilroy Bold", sans-serif;
     font-size: 16px;
@@ -171,6 +245,10 @@ a {
     color: #000000;
 
     list-style: none;
+}
+
+.contacts {
+    width: 560px;
 }
 
 .contact-modal label {
@@ -198,58 +276,113 @@ a {
 }
 
 .main-footer {
+    padding: 65px 0;
+
     background-color: #464646;
 }
 
-.main-footer-logo a:hover,
-.htmlacademy-logo a:hover {
-    opacity: 0.6;
+.main-footer .wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
-.main-footer-logo a:active,
-.htmlacademy-logo a:active {
-    opacity: 0.3;
+.footer-container-left,
+.footer-container-middle,
+.footer-container-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container-left {
+    width: 360px;
+}
+
+.footer-container-middle {
+    justify-content: flex-end;
+}
+
+.footer-container-right {
+    width: 360px;
+    align-items: flex-end;
 }
 
 .main-footer a {
     color: #ffffff;
 }
 
-.user-options a {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-
-.location {
-    color: #ffffff;
-    font-style: normal;
-}
-
 .main-footer a:hover {
-    color: rgba(255, 255, 255, 0.6);
+    opacity: 0.6;
 }
 
-.user-options a:hover {
-    color: #ffffff;
+.main-footer a:active,
+.footer-options a:active {
+    opacity: 0.3;
 }
 
-.main-footer a:active {
-    color: rgba(255, 255, 255, 0.3);
+.footer-options a {
+    opacity: 0.7;
+}
+
+.footer-options a:hover {
+    opacity: 1;
 }
 
 .socials-list a {
     opacity: 0.3;
 }
 
-.socials-list a:hover {
-    opacity: 0.6;
-}
-
 .socials-list a:active {
     opacity: 0.1;
 }
 
+.main-footer ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-footer-logo {
+    width: 163px;
+    height: 35px;
+    margin-bottom: 30px;
+}
+
+.main-footer address {
+    font-style: normal;
+    color: #ffffff;
+}
+
+.footer-navigation {
+    width: 424px;
+    margin-bottom: 75px;
+}
+
+.socials-list {
+    justify-content: space-around;
+}
+
+.footer-options {
+    width: 325px;
+    margin-bottom: 35px;
+}
+
+.footer-container-right .footer-tel {
+    margin-bottom: 65px;
+}
+
+.catalog-wrapper {
+    display: flex;
+
+    width: 1100px;
+    margin: 0 auto;
+    padding-left: 60px;
+}
+
 .catalog ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
     list-style: none;
 }
 
@@ -259,7 +392,17 @@ a {
     color: #000000;
 }
 
-.catalog-breadcrumbs,
+.catalog-breadcrumbs {
+    justify-content: flex-start;
+
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-breadcrumbs li {
+    padding-right: 40px;
+}
+
 .catalog-breadcrumbs a {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.3);
@@ -273,7 +416,10 @@ a {
     color: rgba(0, 0, 0, 0.1)
 }
 
-.catalog-filter {
+.catalog-filter form {
+    width: 200px;
+    padding-right: 68px;
+
     color: #000000;
     
     background-color: #ebebeb;
@@ -281,6 +427,11 @@ a {
 
 .filter-header {
     background-color: #d9d9d9;
+}
+
+.catalog-caption {
+    margin: 0;
+    padding: 20px 0;
 }
 
 .catalog-caption,
@@ -314,6 +465,14 @@ a {
     color: #a6a6a6;
 }
 
+.catalog-products {
+    width: 760px;
+}
+
+.catalog-products-header {
+    padding-left: 73px;
+}
+
 .catalog-products-header,
 .catalog-products-footer {
     background-color: #ebebeb;
@@ -344,6 +503,12 @@ a {
     font-family: "Gilroy Regular", sans-serif;
     font-size: 16px;
     color: #000000;
+}
+
+.catalog-products-footer,
+.catalog-pagination {
+    display: flex;
+    justify-content: space-between;
 }
 
 .catalog-pagination a {
