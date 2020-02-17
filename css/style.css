@@ -45,18 +45,45 @@ a {
 }
 
 .button {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 5px 0;
+    padding-left: 3.6px;
+
     font-family: "Gilroy Bold", sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 3.6px;
     color: #000000;
+}
 
-    background: #f0c52e;
+.button::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    z-index: -1;
+
+    height: 8px;
+    width: inherit;
+
+    background-color: #f0c52e;
+}
+
+.button:hover::before {
+    top: 0;
+
+    height: 100%;
 }
 
 .main-header {
     padding-top: 21px;
-    padding-bottom: 56px;
+    padding-bottom: 49px;
 
     color: #000000;
     background: linear-gradient(to bottom, #ffffff 40px, rgba(240,197,46, 0.5) 40px);
@@ -76,6 +103,7 @@ a {
 .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .half-wrapper {
@@ -169,11 +197,42 @@ ul.half-wrapper li:nth-child(2) {
     opacity: 1;
 }
 
+.popular-products {
+    margin-bottom: 116px;
+
+    background: linear-gradient(to bottom, rgba(240,197,46, 0.5) 111px, #ffffff 111px)
+}
+
+.popular-products .button{
+    width: 220px;
+}
+
 .popular-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    
     list-style: none;
 }
 
+.popular-img {
+    align-self: center;
+    text-align: center;
+
+    width: 565px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.popular-item-right {
+    width: 560px;
+    padding-top: 79px;
+}
+
 .popular-slogan {
+    margin-top: 0;
+    margin-bottom: 19px;
+
     line-height: 56px;
     letter-spacing: 0.47px;
 }
@@ -186,25 +245,69 @@ ul.half-wrapper li:nth-child(2) {
     color: #000000;
 }
 
-.popular-features thead {
-    font-size: 13px;
-    letter-spacing: 0.13px;
+.popular-desc {
+    width: 485px;
+    margin-top: 0;
+    margin-bottom: 43px;
 }
 
-.popular-features tbody {
+li:nth-of-type(n+2) .popular-desc {
+    width: 460px;
+}
+
+.popular-item-slider {
+    margin-bottom: 58px;
+}
+
+.popular-features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    padding: 0;
+
+    font-size: 13px;
+    letter-spacing: 0.13px;
+
+    list-style: none;
+}
+
+.popular-features li {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+}
+
+.popular-features li:nth-of-type(2) {
+    min-width: 140px;
+}
+
+.popular-features span {
+    margin-bottom: 12px;
+
     font-family: "Gilroy Regular", sans-serif;
     font-size: 36px;
     letter-spacing: 0.36px;
 }
 
 .product-navigation-list {
+    margin: 0;
+    margin-bottom: 83px;
+    padding: 0;
+
     list-style: none;
 }
 
+.product-navigation-item {
+    width: 160px;
+}
+
 .product-navigation-item a {
+    padding-top: 30px;
+
     font-family: "Gilroy Bold";
     font-size: 18px;
     line-height: 24px;
+    letter-spacing: 0.18px;
     color: #000000;
 }
 
@@ -212,15 +315,52 @@ ul.half-wrapper li:nth-child(2) {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.site-features-background {
+    background: linear-gradient(to bottom, #ffffff 100px, #e5e5e5 100px) ;
+}
+
 .site-features {
-    background-color: #e5e5e5;
+    min-height: 390px;
+    margin-bottom: 100px;
+    padding-top: 70px;
+}
+
+.site-features h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 35px;
+
+    line-height: 40px;
 }
 
 .site-features-list {
+    width: 300px;
+    margin-top: 0;
+    padding-left: 0;
+
     list-style: none;
 }
 
+.site-features-list .button {
+    width: 160px;
+}
+
+.site-features-right {
+    width: 760px;
+}
+
+.site-features-right div {
+    width: 428px;
+    padding-bottom: 40px;
+}
+
+.site-features-right .feature-warranty {
+    width: 435px;
+}
+
 .famous-brands ul {
+    padding: 0;
+    margin-top: 0;
     list-style: none;
 }
 
@@ -232,6 +372,11 @@ ul.half-wrapper li:nth-child(2) {
 .famous-brands a:hover {
     filter: none;
     opacity: 1;
+}
+
+.info .button,
+.contacts .button {
+    width: 260px;
 }
 
 .info p {
@@ -249,6 +394,14 @@ ul.half-wrapper li:nth-child(2) {
 
 .contacts {
     width: 560px;
+}
+
+.map-popup {
+    display: none;
+}
+
+.contact-modal {
+    display: none;
 }
 
 .contact-modal label {
@@ -370,9 +523,11 @@ ul.half-wrapper li:nth-child(2) {
     margin-bottom: 65px;
 }
 
-.catalog-wrapper {
-    display: flex;
+.catalog {
+    overflow-x: hidden;
+}
 
+.catalog-wrapper {
     width: 1100px;
     margin: 0 auto;
     padding-left: 60px;
@@ -386,9 +541,18 @@ ul.half-wrapper li:nth-child(2) {
     list-style: none;
 }
 
+.catalog-header {
+    padding-top: 45px;
+    margin-bottom: 43px;
+}
+
 .catalog-header h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+
     font-family: "Gilroy Bold", sans-serif;
     font-size: 47px;
+    letter-spacing: 0.47px;
     color: #000000;
 }
 
@@ -396,11 +560,12 @@ ul.half-wrapper li:nth-child(2) {
     justify-content: flex-start;
 
     font-size: 14px;
+    letter-spacing: 0.14px;
     color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-breadcrumbs li {
-    padding-right: 40px;
+    padding-right: 37px;
 }
 
 .catalog-breadcrumbs a {
@@ -416,8 +581,27 @@ ul.half-wrapper li:nth-child(2) {
     color: rgba(0, 0, 0, 0.1)
 }
 
+.catalog-filter {
+    position: relative;
+    z-index: 1;
+}
+
+.catalog-filter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    height: 100%;
+    width: 100vw;
+
+    background-color: #ebebeb;
+}
+
 .catalog-filter form {
     width: 200px;
+    padding-top: 79px;
     padding-right: 68px;
 
     color: #000000;
@@ -426,19 +610,35 @@ ul.half-wrapper li:nth-child(2) {
 }
 
 .filter-header {
+    position: relative;
+    z-index: 1;
+
+    background-color: #d9d9d9;
+}
+
+.filter-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    height: 100%;
+    width: 100vw;
+
     background-color: #d9d9d9;
 }
 
 .catalog-caption {
+    padding: 19px 0;
     margin: 0;
-    padding: 20px 0;
 }
 
 .catalog-caption,
 .pagination-button a {
     font-family: "Gilroy Bold";
     font-size: 16px;
-    letter-spacing: 3.2px;
+    letter-spacing: 3.6px;
     text-transform: uppercase;
     color: #000000;
 }
@@ -465,12 +665,35 @@ ul.half-wrapper li:nth-child(2) {
     color: #a6a6a6;
 }
 
+.catalog-filter .button {
+    width: 200px;
+
+    border: none;
+}
+
 .catalog-products {
     width: 760px;
+    padding-bottom: 77px;
 }
 
 .catalog-products-header {
-    padding-left: 73px;
+    position: relative;
+    z-index: 1;
+
+    justify-content: flex-start;
+}
+
+.catalog-products-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -72px;
+    z-index: -1;
+
+    height: 100%;
+    width: 100vw;
+
+    background-color: #ebebeb;
 }
 
 .catalog-products-header,
@@ -478,9 +701,17 @@ ul.half-wrapper li:nth-child(2) {
     background-color: #ebebeb;
 }
 
+.catalog-sorting {
+    align-items: center;
+    margin-left: 50px;
+    padding-bottom: 2px;
+}
+
 .catalog-sorting a {
-    font-family: "Open Sans", sans-serif;
+    padding-right: 25px;
+
     font-weight: normal;
+
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -491,6 +722,36 @@ ul.half-wrapper li:nth-child(2) {
 .catalog-sorting a:active,
 .current-sorting a {
     color: #000000;
+}
+
+.products-list {
+    padding-top: 25px;
+    padding-bottom: 34px;
+}
+
+.products-list-item {
+    align-items: baseline;
+    align-content: flex-start;
+
+    width: 360px;
+    margin-top: 45px;
+}
+
+.products-list-item p {
+    margin: 0;
+}
+
+.products-list-item .product-img {
+    order: -1;
+
+    margin-bottom: 20px;
+}
+
+.product-name {
+    width: 257px;
+    margin: 0;
+
+    line-height: 24px;
 }
 
 .product-name a {
@@ -505,16 +766,27 @@ ul.half-wrapper li:nth-child(2) {
     color: #000000;
 }
 
-.catalog-products-footer,
 .catalog-pagination {
-    display: flex;
-    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-pagination li {
+    padding: 0 16px;
 }
 
 .catalog-pagination a {
     font-family: "Gilroy Bold";
     font-size: 16px;
     color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-button a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 136px;
+    height: 70px;
+    text-align: center;
+    padding-top: 21px;
 }
 
 .catalog-pagination a:hover {
@@ -530,6 +802,7 @@ ul.half-wrapper li:nth-child(2) {
     background-color: #d9d9d9;
 }
 
-.pagination-button a:active {
+.pagination-button a:active,
+.button:active {
     color: rgba(0, 0, 0, 0.3);
 }
