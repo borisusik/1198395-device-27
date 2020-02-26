@@ -65,6 +65,8 @@ img {
     text-transform: uppercase;
     letter-spacing: 3.6px;
     color: #000000;
+
+    background-color: transparent;
 }
 
 .button::before {
