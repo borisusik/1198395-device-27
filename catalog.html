@@ -113,14 +113,25 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="filter cost-filter">
               <legend>Стоимость</legend>
-              <label>
-                от
-                <input type="number" name="min-cost" min="0" max="5000">
-              </label>
-              <label>
-                до
-                <input type="number" name="max-cost" min="0" max="5000">
-              </label>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label>
+                    от
+                    <input type="number" name="min-price" min="0" max="5000" value="0">
+                  </label>
+                  <label>
+                    до
+                    <input type="number" name="max-price" min="0" max="5000" value="5000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
             
             <fieldset class="filter color-filter">
@@ -183,6 +194,12 @@
                 <a href="sort-by-popularity.html">По популярности</a>
               </li>
             </ul>
+            <div class="arrow arrow-top">
+              <a href="from-lower-price.html" aria-label="По возрастанию"></a>
+            </div>
+            <div class="arrow arrow-down">
+              <a href="from-heigher-price" aria-label="По убыванию"></a>
+            </div>
           </header>
           <ul class="products-list container">
             <li class="products-list-item container">

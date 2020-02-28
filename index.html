@@ -98,8 +98,16 @@
 
       <section class="popular-products wrapper">
         <h2 class="visually-hidden">Популярные товары</h2>
+        <input class="visually-hidden" type="radio" id="popular-item-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="popular-item-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="popular-item-3" name="toggle">
+        <div class="popular-list-slider">
+          <label for="popular-item-1">Первый</label>
+          <label for="popular-item-2">Второй</label>
+          <label for="popular-item-3">Третий</label>
+        </div>
         <ul class="popular-list">
-          <li class="popular-item container">
+          <li class="popular-item container" id="slide-1">
             <p class="popular-img">
               <img src="img/selfie-stick.png" width="384" height="486" alt="Складная селфи-палка синего цвета">
             </p>
@@ -121,7 +129,7 @@
               </ul>
             </div>
           </li>
-          <li class="popular-item container">
+          <li class="popular-item container" id="slide-2">
             <p class="popular-img">
               <img src="img/fitness-bracelet.png" width="345" height="485" alt="Фитнес-браслет черного цвета">
             </p>
@@ -141,7 +149,7 @@
               </ul>
             </div>
           </li>
-          <li class="popular-item container">
+          <li class="popular-item container" id="slide-3">
             <p class="popular-img">
               <img src="img/quadcopter.png" width="526" height="334" alt="Квадрокоптер белого цвета с лазерной пушкой">
             </p>
@@ -192,33 +200,41 @@
       <div class="site-features-background">
         <section class="site-features wrapper container">
           <h2 class="visually-hidden">Предоставляемые услуги</h2>
-          
+          <input class="visually-hidden" type="radio" id="delivery-slider" name="features-toggle" checked>
+          <input class="visually-hidden" type="radio" id="warranty-slider" name="features-toggle">
+          <input class="visually-hidden" type="radio" id="credit-slider" name="features-toggle">
           <ul class="site-features-list">
             <li>
-              <a class="button delivery-button" href="delivery.html">Доставка</a>
+              <label for="delivery-slider">
+                <a class="button delivery-button">Доставка</a>
+              </label>
             </li>
             <li>
-              <a class="button warranty-button" href="warranty.html">Гарантия</a>
+              <label for="warranty-slider">
+                <a class="button warranty-button">Гарантия</a>
+              </label>
             </li>
             <li>
-              <a class="button credit-button" href="credit.html">Кредит</a>
+              <label for="credit-slider">
+                <a class="button credit-button">Кредит</a>
+              </label>
             </li>
           </ul>
 
           <div class="site-features-right">
-            <div class="feature-delivery">
+            <div class="site-feature feature-delivery">
               <h3 class="section-title">Доставка</h3>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
               Ведь мы неплохо заработаем, поднимая его на ваш этаж.
             </div>
 
-            <div class="feature-warranty">
+            <div class="site-feature feature-warranty">
               <h3 class="section-title">Гарантия</h3>
               Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
               Товар, не дом, конечно же.
             </div>
 
-            <div class="feature-credit">
+            <div class="site-feature feature-credit">
               <h3 class="section-title">Кредит</h3>
               Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
               условия кредита. Выгодные для нашего банка, разумеется.
