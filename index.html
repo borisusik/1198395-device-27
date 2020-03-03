@@ -25,7 +25,7 @@
           
           <div class="user-nav half-wrapper">
             <p class="header-sign-in">
-              <a href="sign-in.html">Войти</a>
+              <a class="profile" href="sign-in.html">Войти</a>
             </p>
 
             <p class="header-compare">
@@ -49,7 +49,7 @@
                       <a href="VR.html">Виртуальная реальность</a>
                     </li>
                     <li>
-                      <a href="monopods.html">Моноподы для селфи</a>
+                      <a href="catalog.html">Моноподы для селфи</a>
                     </li>
                     <li>
                       <a href="action-cameras.html">Экшн-камеры</a>
@@ -205,19 +205,13 @@
           <input class="visually-hidden" type="radio" id="credit-slider" name="features-toggle">
           <ul class="site-features-list">
             <li>
-              <label for="delivery-slider">
-                <a class="button delivery-button">Доставка</a>
-              </label>
+              <label class="button delivery-button" for="delivery-slider">Доставка</label>
             </li>
             <li>
-              <label for="warranty-slider">
-                <a class="button warranty-button">Гарантия</a>
-              </label>
+              <label class="button warranty-button" for="warranty-slider">Гарантия</label>
             </li>
             <li>
-              <label for="credit-slider">
-                <a class="button credit-button">Кредит</a>
-              </label>
+              <label class="button credit-button" for="credit-slider">Кредит</label>
             </li>
           </ul>
 
@@ -246,24 +240,24 @@
       <section class="famous-brands wrapper">
         <h2 class="visually-hidden">Знаменитые бренды</h2>
         <ul class="container">
-          <li>
+          <li class="famous-brands-item dji-brand">
             <a href="https://dji.com">
-              <img src="img/dji-logo.png" alt="Логотип фирмы 'DJI'">
+              <img src="img/dji-logo.png" width="260" height="100" alt="Логотип фирмы 'DJI'">
             </a>
           </li>
-          <li>
+          <li class="famous-brands-item sp-gadgets-brand">
             <a href="https://sp-gadgets.com">
-              <img src="img/sp-gadgets-logo.png" alt="Логотип фирмы 'sp-gadgets'">
+              <img src="img/sp-gadgets-logo.png" width="260" height="100" alt="Логотип фирмы 'sp-gadgets'">
             </a>
           </li>
-          <li>
+          <li class="famous-brands-item gopro-brand">
             <a href="https://gopro.com">
-              <img src="img/gopro-logo.png" alt="Логотип фирмы 'gopro'">
+              <img src="img/gopro-logo.png" width="260" height="100" alt="Логотип фирмы 'gopro'">
             </a>
           </li>
-          <li>
+          <li class="famous-brands-item vive-brand">
             <a href="https://vive.com">
-              <img src="img/vive-logo.png" alt="Логотип фирмы 'vive'">
+              <img src="img/vive-logo.png" width="260" height="100" alt="Логотип фирмы 'vive'">
             </a>
           </li>
         </ul>
@@ -273,15 +267,12 @@
         <section class="section info">
           <h2 class="section-title">О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России!
-            DEVICE работает со многими транспортными компаниями:
-            <ul>
-              <li>Деловые Линии</li>
-              <li>Автотрейдинг</li>
-              <li>ЖелДорЭкспедиция</li>
-            </ul>
-          </p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul>
+            <li>Деловые Линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
           <p>
             <a class="button" href="about-us.html">Подробнее о нас</a>
           </p>
@@ -306,41 +297,52 @@
 
       <section class="map-popup">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <button type="button">Закрыть</button>
+        <button class="button-close" type="button">Закрыть</button>
       </section>
 
       <section class="contact-modal">
         <h2 class="visually-hidden">Обратная связь</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
+          <p class="name-field">
             <label for="name">Ваше имя:</label>
             <input class="modal-field" type="text" name="name" id="name" placeholder="Имя Фамилия">
           </p>
-          <p>
+          <p class="email-field">
             <label for="email">Ваш e-mail:</label>
             <input class="modal-field" type="email" name="email" id="email" placeholder="email@example.com">
           </p>
-          <p>
+          <p class="message-field">
             <label for="message">Текст письма</label>
             <textarea class="modal-field" name="message" id="message" placeholder="В свободной форме"></textarea>
           </p>
           <button class="button" type="submit">Отправить</button>
         </form>
-        <button type="button">Закрыть</button>
+        <button class="button-close" type="button">Закрыть</button>
       </section>
     </main>
     <footer class="main-footer">
       <div class="wrapper">
-        <div class="footer-container-left">
+        <div class="main-footer-top container">
           <div class="main-footer-logo">
             <a href="index.html">
               <img src="img/device-footer-logo.svg" width="163" height="35" alt="Логотип Device">
             </a>
           </div>
-          <address>г. Москва, ул. Строителей, 15</address>
+          <div class="footer-options container">
+            <p class="footer-option footer-sign-in authorized">
+              <a class="footer-profile" href="profile.html">Войти</a>
+            </p>
+            <p class="footer-option footer-compare">
+              <a href="compare.html">Сравнить</a>
+            </p>
+            <p class="footer-option footer-cart">
+              <a href="cart.html">Корзина</a>
+            </p>
+          </div>
         </div>
         
-        <div class="footer-container-middle">
+        <div class="main-footer-middle container">
+          <address>г. Москва, ул. Строителей, 15</address>
           <nav class="footer-navigation">
             <ul class="container">
               <li class="main-navigation-item">
@@ -354,6 +356,12 @@
               </li>
             </ul>
           </nav>
+          <p class="footer-tel">
+            <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+          </p>
+        </div>
+
+        <div class="main-footer-bottom container">
           <ul class="socials-list container">
             <li class="social-fb">
               <a href="https://facebook.com"><span class="visually-hidden">Фейсбук</span></a>
@@ -365,23 +373,6 @@
               <a href="https://twitter.com"><span class="visually-hidden">Твиттер</span></a>
             </li>
           </ul>
-        </div>
-
-        <div class="footer-container-right">
-          <div class="footer-options container">
-            <p class="footer-option footer-sign-in">
-              <a href="sign-in.html">Войти</a>
-            </p>
-            <p class="footer-option footer-compare">
-              <a href="compare.html">Сравнить</a>
-            </p>
-            <p class="footer-option footer-cart">
-              <a href="cart.html">Корзина</a>
-            </p>
-          </div>
-          <p class="footer-tel">
-            <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-          </p>
           <div class="htmlacademy-logo">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/htmlacademy-logo.svg" width="27" height="35" alt="Логотип 'htmlacademy'">

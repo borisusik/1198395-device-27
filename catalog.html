@@ -24,8 +24,9 @@
           </form>
           
           <div class="user-nav half-wrapper">
-            <p class="header-sign-in">
-              <a href="sign-in.html">Войти</a>
+            <p class="header-sign-in authorized">
+              <a class="profile" href="profile.html">Валентин Петухов</a>
+              <a class="log-out" href="log-out.html">Выйти</a>
             </p>
 
             <p class="header-compare">
@@ -49,7 +50,7 @@
                       <a href="VR.html">Виртуальная реальность</a>
                     </li>
                     <li>
-                      <a href="monopods.html">Моноподы для селфи</a>
+                      <a href="catalog.html">Моноподы для селфи</a>
                     </li>
                     <li>
                       <a href="action-cameras.html">Экшн-камеры</a>
@@ -235,9 +236,9 @@
               </p>
               <p>2 500 руб.</p>
             </li>
-            <li class="products-list-item container">
+            <li class="products-list-item container item-new">
               <h3 class="product-name">
-                <a href="catalog-item-4.html">Селфи-палка "Следуй за мной"</a>
+                <a href="catalog-item-4.html">Селфи-палка «Следуй за мной»</a>
               </h3>
               <p class="product-img">
                 <img src="img/catalog-item-4.jpg" width="360" height="380" alt="Селфи-палка, выполненная в виде человеческой руки">
@@ -272,16 +273,28 @@
     </main>
     <footer class="main-footer">
       <div class="wrapper">
-        <div class="footer-container-left">
+        <div class="main-footer-top container">
           <div class="main-footer-logo">
             <a href="index.html">
               <img src="img/device-footer-logo.svg" width="163" height="35" alt="Логотип Device">
             </a>
           </div>
-          <address>г. Москва, ул. Строителей, 15</address>
+          <div class="footer-options container">
+            <p class="footer-option footer-sign-in authorized">
+              <a class="footer-profile" href="profile.html">Валентин Петухов</a>
+              <a class="log-out" href="log-out.html">Выйти</a>
+            </p>
+            <p class="footer-option footer-compare">
+              <a href="compare.html">Сравнить</a>
+            </p>
+            <p class="footer-option footer-cart">
+              <a href="cart.html">Корзина</a>
+            </p>
+          </div>
         </div>
         
-        <div class="footer-container-middle">
+        <div class="main-footer-middle container">
+          <address>г. Москва, ул. Строителей, 15</address>
           <nav class="footer-navigation">
             <ul class="container">
               <li class="main-navigation-item">
@@ -295,6 +308,12 @@
               </li>
             </ul>
           </nav>
+          <p class="footer-tel">
+            <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+          </p>
+        </div>
+
+        <div class="main-footer-bottom container">
           <ul class="socials-list container">
             <li class="social-fb">
               <a href="https://facebook.com"><span class="visually-hidden">Фейсбук</span></a>
@@ -306,23 +325,6 @@
               <a href="https://twitter.com"><span class="visually-hidden">Твиттер</span></a>
             </li>
           </ul>
-        </div>
-
-        <div class="footer-container-right">
-          <div class="footer-options container">
-            <p class="footer-option footer-sign-in">
-              <a href="sign-in.html">Войти</a>
-            </p>
-            <p class="footer-option footer-compare">
-              <a href="compare.html">Сравнить</a>
-            </p>
-            <p class="footer-option footer-cart">
-              <a href="cart.html">Корзина</a>
-            </p>
-          </div>
-          <p class="footer-tel">
-            <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-          </p>
           <div class="htmlacademy-logo">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/htmlacademy-logo.svg" width="27" height="35" alt="Логотип 'htmlacademy'">
