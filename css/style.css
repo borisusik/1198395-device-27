@@ -1018,6 +1018,16 @@ li:nth-of-type(n+2) .popular-desc {
     background: url("../img/map-big.jpg") 50% 50% no-repeat;
 }
 
+.map-popup iframe {
+    position: relative;
+
+    border: none;
+}
+
+.map-popup-show {
+    display: block;
+}
+
 .contact-modal {
     display: none;
     box-sizing: border-box;
