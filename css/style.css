@@ -123,7 +123,7 @@ img {
 
 .main-header {
     padding-top: 21px;
-    padding-bottom: 34px;
+    padding-bottom: 32px;
 
     color: #000000;
     background: linear-gradient(to bottom, #ffffff 40px, #f7e296 40px);
@@ -280,11 +280,13 @@ img {
 .header-sign-in .profile {
     padding-left: 26px;
 
+    letter-spacing: 0.24px;
+
     background: url("../img/sign-in-icon.svg") 0 50% no-repeat;
 }
 
 .authorized .log-out {
-    margin-left: 19px;
+    margin-left: 15px;
 
     opacity: 0.5;
 }
@@ -357,7 +359,7 @@ ul.half-wrapper li:nth-child(3n+2) {
     position: absolute;
     top: 35px;
     left: -60px;
-    z-index: 1;
+    z-index: 2;
 
     display: flex;
     flex-wrap: wrap;
@@ -408,6 +410,7 @@ ul.half-wrapper li:nth-child(3n+2) {
 
     min-height: 495px;
     margin-bottom: 97px;
+    padding-top: 2px;
 }
 
 .popular-products::before {
@@ -418,7 +421,7 @@ ul.half-wrapper li:nth-child(3n+2) {
     z-index: -1;
 
     width: 1160px;
-    height: 111px;
+    height: 113px;
     
     background-color:  #f7e296;
 }
@@ -430,7 +433,7 @@ ul.half-wrapper li:nth-child(3n+2) {
 .popular-list-slider {
     position: absolute;
     right: 61px;
-    top: 326px;
+    top: 328px;
 
     font-size: 0;
 }
@@ -613,6 +616,8 @@ li:nth-of-type(n+2) .popular-desc {
 
     width: 160px;
     padding-top: 193px;
+
+    line-height: normal;
 }
 
 .product-navigation-item a {
@@ -623,8 +628,8 @@ li:nth-of-type(n+2) .popular-desc {
     color: #000000;
 }
 
-.monopods-items a {
-    width: 120px;
+.vr-items a {
+    letter-spacing: 0.41px;
 }
 
 .product-navigation-item a:active {
@@ -702,9 +707,11 @@ li:nth-of-type(n+2) .popular-desc {
 .site-features h3 {
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 35px;
+    padding-left: 1px;
+    padding-bottom: 34px;
 
-    line-height: 40px;
+    line-height: 42px;
+    letter-spacing: 0.95px;
 }
 
 .site-features li {
@@ -787,18 +794,16 @@ li:nth-of-type(n+2) .popular-desc {
 }
 
 .site-feature {
-    width: 428px;
+    width: 440px;
     padding-bottom: 40px;
+
+    letter-spacing: 0.28px;
 }
 
 .site-feature::before {
     content: "";
     position: absolute;
     z-index: 1;
-}
-
-.feature-warranty {
-    width: 435px;
 }
 
 .feature-delivery::before {
@@ -834,7 +839,7 @@ li:nth-of-type(n+2) .popular-desc {
 .famous-brands ul {
     padding: 0;
     margin-top: 0;
-    margin-bottom: 84px;
+    margin-bottom: 93px;
 
     list-style: none;
 }
@@ -842,8 +847,13 @@ li:nth-of-type(n+2) .popular-desc {
 .famous-brands-item {
     position: relative;
 
+    box-sizing: border-box;
     width: 260px;
     height: 100px;
+}
+
+.vive-brand a {
+    margin-left: -3px;
 }
 
 .famous-brands-item a::before {
@@ -873,7 +883,7 @@ li:nth-of-type(n+2) .popular-desc {
 }
 
 .vive-brand a::before {
-    background-position: -275px -5px;
+    background-position: -278px -5px;
 }
 
 .famous-brands-item a:hover::before {
@@ -883,7 +893,7 @@ li:nth-of-type(n+2) .popular-desc {
 .section {
     position: relative;
 
-    padding-top: 46px;
+    padding-top: 47px;
     padding-bottom: 67px;
 }
 
@@ -901,10 +911,11 @@ li:nth-of-type(n+2) .popular-desc {
 
 .section h2 {
     margin-top: 0;
-    margin-bottom: 39px;
-    margin-left: -2px;
+    margin-bottom: 38px;
+    margin-left: -2.5px;
 
     line-height: normal;
+    letter-spacing: 0.67px;
 }
 
 .section p:first-of-type {
@@ -919,12 +930,26 @@ li:nth-of-type(n+2) .popular-desc {
 
 .info p {
     width: 485px;
+    margin-top: 0;
+    margin-left: -1px;
+
+    letter-spacing: 0.11px;
+}
+
+.info p:nth-of-type(2) {
+    width: 470px;
+    margin-bottom: 17px;
+
+    letter-spacing: -0.15px;    
 }
 
 .info ul {
+    margin-top: 0;
     margin-bottom: 0;
+    margin-left: 0.5px;
     padding-top: 54px;
     padding-left: 0;
+    padding-bottom: 4px;
 
     font-family: "Gilroy Bold", sans-serif;
     font-size: 16px;
@@ -954,8 +979,18 @@ li:nth-of-type(n+2) .popular-desc {
     border-radius: 50%;
 }
 
+.info .button {
+    margin-left: 1px;
+}
+
 .contacts {
     width: 560px;
+}
+
+.contacts p:first-of-type {
+    margin-left: -1px;
+
+    letter-spacing: 0.1px;
 }
 
 .contact-map {
@@ -1063,7 +1098,8 @@ li:nth-of-type(n+2) .popular-desc {
     border: 2px solid #f7e296;
 }
 
-.modal-field:invalid {
+.modal-field:invalid,
+.modal-field.invalid {
     background-color: #f6dada;
 }
 
@@ -1074,7 +1110,7 @@ li:nth-of-type(n+2) .popular-desc {
     cursor: pointer;
 }
 
-.button-close {
+.popup-button {
     position: absolute;
     top: 22px;
     right: 22px;
@@ -1092,8 +1128,8 @@ li:nth-of-type(n+2) .popular-desc {
     cursor: pointer;
 }
 
-.button-close::before,
-.button-close::after {
+.popup-button::before,
+.popup-button::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -1107,19 +1143,19 @@ li:nth-of-type(n+2) .popular-desc {
     background-color: #ffffff;
 }
 
-.button-close::before {
+.popup-button::before {
     transform: rotate(-45deg);
 }
 
-.button-close::after {
+.popup-button::after {
     transform: rotate(45deg);
 }
 
-.button-close:hover {
+.popup-button:hover {
     opacity: 1;
 }
 
-.button-close:active {
+.popup-button:active {
     opacity: 0.3;
 }
 
@@ -1332,6 +1368,11 @@ li:nth-of-type(n+2) .popular-desc {
     background: url("../img/twitter-icon.svg") 50% 50% no-repeat;
 }
 
+.catalog-header-logo {
+    margin-top: 3px;
+    margin-bottom: 14px;
+}
+
 .catalog {
     overflow-x: hidden;
 }
@@ -1351,17 +1392,18 @@ li:nth-of-type(n+2) .popular-desc {
 }
 
 .catalog-header {
-    padding-top: 45px;
+    padding-top: 46px;
     margin-bottom: 43px;
 }
 
 .catalog-header h1 {
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: -1px;
 
     font-family: "Gilroy Bold", sans-serif;
     font-size: 47px;
-    letter-spacing: 0.47px;
+    letter-spacing: 0.65px;
     color: #000000;
 }
 
@@ -1369,26 +1411,32 @@ li:nth-of-type(n+2) .popular-desc {
     justify-content: flex-start;
 
     font-size: 14px;
-    letter-spacing: 0.14px;
+
     color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-breadcrumbs li:nth-child(n+2) {
     position: relative;
 
+    padding-left: 23px;
+    margin-left: 14px;
+    margin-right: 4px;
+}
+
+.catalog-breadcrumbs li:nth-child(3n) {
     padding-left: 20px;
-    margin-left: 16px;
 }
 
 .catalog-breadcrumbs li:nth-child(n+2)::before {
     content: "";
     position: absolute;
     left: 0;
+    left: -1.5px;
     top: 50%;
 
-    width: 4px;
-    height: 4px;
-    margin-top: -2px;
+    width: 3.5px;
+    height: 3.5px;
+    margin-top: -1.75px;
 
     border: 1px solid #000000;
     border-bottom: none;
@@ -1400,6 +1448,7 @@ li:nth-of-type(n+2) .popular-desc {
 .catalog-breadcrumbs a {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.09px;
 }
 
 .catalog-breadcrumbs a:hover {
@@ -1430,7 +1479,7 @@ li:nth-of-type(n+2) .popular-desc {
 
 .catalog-filter form {
     width: 205px;
-    margin-top: 70px;
+    margin-top: 69px;
     margin-right: 63px;
 
     color: #000000;
@@ -1500,18 +1549,20 @@ li:nth-of-type(n+2) .popular-desc {
 .cost-filter {
     padding-top: 69px;
     padding-left: 0;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
 }
 
 .range-controls {
     position: relative;
 
-    margin-bottom: 9px;
+    margin-bottom: 7px;
 }
 
 .range-controls .scale {
-    width: 196px;
+    width: 200px;
     height: 2px;
+    margin-top: 2px;
+    margin-left: -2px;
 
     background-color: #dbdbdb;
 }
@@ -1525,7 +1576,7 @@ li:nth-of-type(n+2) .popular-desc {
 
 .range-controls .toggle {
     position: absolute;
-    top: -9px;
+    top: -10px;
 
     width: 4px;
     height: 4px;
@@ -1544,14 +1595,16 @@ li:nth-of-type(n+2) .popular-desc {
 }
 
 .range-controls .toggle-min {
-    left: 0;
+    left: -8px;
 }
 
 .range-controls .toggle-max {
-    left: 100px;
+    left: 105px;
 }
 
 .price-controls {
+    margin-left: -3px;
+
     font-size: 0;
 }
 
@@ -1559,16 +1612,22 @@ li:nth-of-type(n+2) .popular-desc {
     display: inline-block;
     width: 40%;
     vertical-align: top;
+    margin-right: 11px;
 }
 
 .price-controls input {
     width: 50px;
     margin: 0;
+    padding-top: 0;
 
     font-family: "Gilroy Regular", sans-serif;
     
     background-color: transparent;
     border: none;
+}
+
+.color-filter {
+    padding-bottom: 11px;
 }
 
 .filter-option {
@@ -1621,12 +1680,12 @@ li:nth-of-type(n+2) .popular-desc {
 .filter-radio + label::before {
     content: "";
     position: absolute;
-    top: 3px;
+    top: 1px;
     left: -40px;
 
-    width: 8px;
-    height: 8px;
-    padding: 4px;
+    width: 8.5px;
+    height: 8.5px;
+    padding: 4.25px;
 
     border-radius: 50%;
     border: 4px solid #000000;
@@ -1671,7 +1730,8 @@ li:nth-of-type(n+2) .popular-desc {
 }
 
 .catalog-caption {
-    padding: 19px 0;
+    padding: 20px 0;
+    padding-left: 1px;
     margin: 0;
 }
 
@@ -1738,6 +1798,7 @@ li:nth-of-type(n+2) .popular-desc {
 }
 
 .catalog-sorting {
+    max-width: 500px;
     align-items: center;
     margin-left: 50px;
     padding-bottom: 2px;
@@ -1745,6 +1806,25 @@ li:nth-of-type(n+2) .popular-desc {
 
 .catalog-sorting li {
     max-width: 300px;
+
+    font-size: 14px;
+}
+
+.catalog-sorting a {
+    padding-right: 29px;
+
+    font-weight: normal;
+    letter-spacing: 0.05px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-sorting a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-sorting a:active,
+.current-sorting a {
+    color: #000000;
 }
 
 .arrow a {
@@ -1782,25 +1862,8 @@ li:nth-of-type(n+2) .popular-desc {
     opacity: 1;
 }
 
-.catalog-sorting a {
-    padding-right: 25px;
-
-    font-weight: normal;
-
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.catalog-sorting a:hover {
-    color: rgba(0, 0, 0, 0.6);
-}
-
-.catalog-sorting a:active,
-.current-sorting a {
-    color: #000000;
-}
-
 .products-list {
-    padding-top: 25px;
+    padding-top: 24px;
     padding-bottom: 34px;
 }
 
@@ -1810,6 +1873,7 @@ li:nth-of-type(n+2) .popular-desc {
 
     width: 360px;
     margin-top: 45px;
+    margin-bottom: 1px;
 }
 
 .products-list-item p {
@@ -1877,8 +1941,16 @@ li:nth-of-type(n+2) .popular-desc {
 .product-name {
     width: 257px;
     margin: 0;
+    margin-left: -1px;
 
-    line-height: 24px;
+    line-height: 23px;
+    letter-spacing: 0.32px;
+}
+
+.products-list-item:nth-child(3) .product-name {
+    width: 260px;
+
+    letter-spacing: 0.14px;
 }
 
 .product-name a {
@@ -1916,10 +1988,12 @@ li:nth-of-type(n+2) .popular-desc {
 
 .catalog-pagination {
     align-items: center;
+
+    padding-top: 2px;
 }
 
 .catalog-pagination li {
-    padding: 0 16px;
+    padding: 0 15.5px;
 }
 
 .catalog-pagination a {
@@ -1932,7 +2006,7 @@ li:nth-of-type(n+2) .popular-desc {
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
-    width: 136px;
+    width: 130px;
     height: 70px;
     padding-top: 21px;
 
