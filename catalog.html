@@ -5,7 +5,7 @@
     <title>HTML Academy: Каталог Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header wrapper">
@@ -18,9 +18,9 @@
         
         <div class="header-options container">
           <form class="site-search" action="https://echo.htmlacademy.ru" method="get">
-              <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту">
-              <label for="search"><span class="visually-hidden">Поиск по сайту</span></label>
-              <button type="submit">Найти</button>
+            <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту">
+            <label for="search"><span class="visually-hidden">Поиск по сайту</span></label>
+            <button type="submit">Найти</button>
           </form>
           
           <div class="user-nav half-wrapper">
@@ -44,7 +44,7 @@
             <li class="main-navigation-item catalog-navigation-heading">
               <a href="catalog.html">Каталог товаров</a>
               <ul class="catalog-navigation">
-                <li>
+                <li class="container">
                   <ul class="catalog-column">
                     <li>
                       <a href="VR.html">Виртуальная реальность</a>
@@ -56,8 +56,6 @@
                       <a href="action-cameras.html">Экшн-камеры</a>
                     </li>
                   </ul>
-                </li>
-                <li>
                   <ul class="catalog-column">
                     <li>
                       <a href="fitness-bracelets.html">Фитнес-браслеты</a>
@@ -66,8 +64,6 @@
                       <a href="smart-watches">Умные часы</a>
                     </li>
                   </ul>
-                </li>
-                <li>
                   <ul class="catalog-column">
                     <li>
                       <a href="quadcopters.html">Квадрокоптеры</a>
@@ -240,7 +236,7 @@
               <h3 class="product-name">
                 <a href="catalog-item-4.html">Селфи-палка «Следуй за мной»</a>
               </h3>
-              <p class="product-img">
+              <p class="product-img"  aria-label="Новый товар">
                 <img src="img/catalog-item-4.jpg" width="360" height="380" alt="Селфи-палка, выполненная в виде человеческой руки">
                 <a class="button" href="cart.html">В корзину</a>
                 <a class="compare-button" href="compare.html">Добавить к сравнению</a>
