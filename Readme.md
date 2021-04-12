@@ -1,4 +1,4 @@
-# Личный проект «Девайс»
+# Личный проект [«Девайс»](https://borisusik.github.io/1198395-device-27)
 
 * Студент: [Борис Глинский](https://htmlacademy.ru/profile/colspan).
 * Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
